@@ -11,12 +11,17 @@ window.addEventListener('load', ()=> {
 
             /* assigning the API call with your generated API key to the variable, 
             API key sourced from www.OpenWeather.org */
-            const apiKey = `https://api.openweathermap.org/data/2.5/weather?lat=${lat},&lon=${long}&appid={1b1739c497edc04ee44df7be05100696}`;
+            const apiKey = `api.openweathermap.org/data/2.5/weather?lat=${lat},&lon=${long}&appid={1b1739c497edc04ee44df7be05100696}`;
+
+        /* getting the location from the URL above by making a call to the api and returning the results */
+        fetch(apiKey)
+        .then(feedback => {
+            return feedback.json();
+        })
+        .then(data => {
+            console.log(data);
         });
-    
-    /* if the users curent location does not exists, produce the following message */
-    }else {
-        h2.textContent = "Unable to find current location, please check your spelling and try again"
+    });    
     }
 });
 
