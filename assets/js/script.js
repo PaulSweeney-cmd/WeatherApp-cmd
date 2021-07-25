@@ -11,7 +11,7 @@ window.addEventListener('load', ()=> {
 
             /* assigning the API call with your generated API key to the variable, 
             API key sourced from www.OpenWeather.org */
-            const apiKey = `api.openweathermap.org/data/2.5/weather?lat=${lat},&lon=${long}&appid={1b1739c497edc04ee44df7be05100696}`;
+            const apiKey = `https://api.openweathermap.org/data/2.5/weather?${lat}&lon=${long}&appid={dbc479491b0ccb704e65731224cbf39d}`;
 
             /* getting the location from the URL above by making a call to the api and returning the results */
             fetch(apiKey)
@@ -24,6 +24,7 @@ window.addEventListener('load', ()=> {
         });
     }
 });
+
 
 
 
