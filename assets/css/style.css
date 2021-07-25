@@ -18,3 +18,18 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+.temp {
+    flex-direction: column;
+}
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.degree-section span {
+    margin: 10px;
+    font-size: 32px;
+}
+.degree-section h2 {
+    font-size: 42px;
+}
