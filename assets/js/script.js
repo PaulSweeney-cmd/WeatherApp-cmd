@@ -11,7 +11,7 @@ window.addEventListener('load', ()=> {
 
             /* assigning the API call with your generated API key to the variable, 
             API key sourced from www.OpenWeather.org */
-            const apiKey = `api.openweathermap.org/data/2.5/weather?lat=${lat},&lon=${long}&appid={1b1739c497edc04ee44df7be05100696}`;
+            const apiKey = `https://api.openweathermap.org/data/2.5/weather?lat=${lat},&lon=${long}&appid={1b1739c497edc04ee44df7be05100696}`;
         });
     
     /* if the users curent location does not exists, produce the following message */
