@@ -9,16 +9,15 @@ body {
     height: 100vh;
     display: flex;
     color: #fafafa;
-    
 }
 .fa, .fas {
-    font-weight: 900;
     font-size: 20px;
     cursor: pointer;
+    color: #fafafa;
 }
 .card {
     padding: 22px;
-    background: transparent;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     border-radius: 14px;
     width: 100%;
     max-width: 420px;
@@ -26,23 +25,48 @@ body {
     box-shadow: 5px 10px 20px #fafafa;
     font-family: 'Dosis', sans-serif;
 }
+h1.city {
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: unset;
+}
+.temperature {
+    font-family: 'Dosis', sans-serif;
+    font-size: 46px;
+}
 .conditions {
     font-family: 'Dosis', sans-serif;
     letter-spacing: 3px;
     font-size: 20px;
-    font-weight: 600;
-   
 }
 .humidity {
     font-family: 'Dosis', sans-serif;
     letter-spacing: 3px;
-    font-size: 20px;
-    font-weight: 600;
-    
+    font-size: 20px; 
 }
 .wind-speed {
     font-family: 'Dosis', sans-serif;
     letter-spacing: 3px;
     font-size: 20px;
-    font-weight: 600;
+}
+button.search-button {
+    margin: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #fafafa;
+    background: transparent;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+}
+input.search-bar {
+    border: 1px solid #fafafa;
+    background: transparent;
+    padding: 8px;
+    border-radius: 3px;
+    color: #fafafa;
+    outline: none;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
 }
