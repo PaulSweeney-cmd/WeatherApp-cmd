@@ -5,13 +5,44 @@ body {
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
+    margin: 0;
     height: 100vh;
     display: flex;
     color: #fafafa;
-    font-family: 'Dosis', sans-serif;
+    
 }
 .fa, .fas {
     font-weight: 900;
     font-size: 20px;
     cursor: pointer;
+}
+.card {
+    padding: 22px;
+    background: transparent;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 420px;
+    margin: 10px;
+    box-shadow: 5px 10px 20px #fafafa;
+    font-family: 'Dosis', sans-serif;
+}
+.conditions {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+.humidity {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.wind-speed {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 600;
 }
