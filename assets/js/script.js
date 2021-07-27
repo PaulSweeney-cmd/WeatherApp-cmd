@@ -32,7 +32,17 @@ let weather = {
         document.querySelector(".temperature").innerText = temp + " °C";
         document.querySelector(".humidity").innerText = "Humidity :" + humidity + " %";
         document.querySelector(".wind-speed").innerText = "Wind Speed :" + speed + " km/h";
+
+        let temperatureSection = document.querySelector(".temperature");
+        temperatureSection.addEventListener('click', () => {
+            if(temperatureSection.textContent === "°C"){
+                temperatureSection.textContent = "°F";
+            }else{
+                temperatureSection.textContent = "°C"
+            }
+        })
     },
+    
 };
 
 
